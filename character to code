@@ -1,0 +1,8 @@
+Read a character and print ASCII for given character
+
+int main()
+{
+ int c;
+ scanf("%c",&c);
+printf("%d",c);
+}
