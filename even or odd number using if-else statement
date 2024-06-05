@@ -1,0 +1,23 @@
+Write a program to find whether the given number is even or odd using the if-else statement
+
+SOURCE CODE:
+
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int a;
+    scanf("%d",&a);
+    if(a%2==0){
+    printf("%d is even number",a);
+    }
+    printf("%d is odd number",a);
+    return 0;
+}
+
+INPUT:
+15
+
+
+OUTPUT:
+15 is odd number
