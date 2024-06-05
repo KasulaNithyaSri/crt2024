@@ -38,17 +38,15 @@ int main() {
     scanf("%d %d",&quantity,&cost);
     int total=quantity*cost;
     float gst=(18*total)/100;
-    if(total > 200){
-        total=((quantity*cost) - (quantity*cost*20))/100;    
+    if(quantity > 200){
+        total=quantity*cost - quantity*cost*20/100;
     }
-   else{
-         total=quantity*cost;
-   }
+    else{
         printf("Quantity Ordered %d\n",quantity);
         printf("Price per item is Rs.%d\n",cost);
         printf("Total Amount = Rs.%d\n",total);
         printf("GST - Rs.%.1f\n",gst);
         printf("Net Amount Payable is Rs.%.1f",total+gst);
-    
+    }
     return 0;
 }
