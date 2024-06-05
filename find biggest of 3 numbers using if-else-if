@@ -1,0 +1,32 @@
+write a program to find biggest of three numbers using the "if-else-if"
+
+#include <stdio.h>
+#include<math.h>
+int main() {
+  int a,b,c;
+  scanf("%d %d %d",&a,&b,&c);
+  if(a>b && a>c){
+      printf("%d is biggest number",a);
+  }
+  else
+  if(b>c){
+      printf("%d is biggest number",b);
+  }
+  else{
+      printf("%d is biggest number",c);
+  }
+   return 0;
+}
+
+Output1:
+10 15 2
+15 is biggest number
+
+output 2:
+15 9 3
+15 is biggest number
+
+output 3:
+
+0 2 4
+4 is biggest number
