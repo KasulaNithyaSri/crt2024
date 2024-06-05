@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include<math.h>
+int main() {
+  if(123){
+      printf("Java");
+  }
+  else{
+      printf("Python");
+  }
+   return 0;
+}
+
+Output:
+
+Java(for any natural number)
+
+int main() {
+  if(0){
+      printf("Java");
+  }
+  else{
+      printf("Python");
+  }
+   return 0;
+}
+
+Output:
+Python(for value 0 in if condition)
