@@ -1,0 +1,36 @@
+write a program to find the roots of a quadratic equation
+
+SOURCE CODE:
+
+
+#include <stdio.h>
+#include<math.h>
+int main() {
+   float a,b,c;
+   scanf("%f%f%f",&a,&b,&c);
+   float d=b*b-4*a*c;
+   if(d<0){
+       printf("Roots are imaginary");
+   }
+   else
+   {
+   float r1=(-b+sqrt(d))/(2*a);
+    float r2=(-b-sqrt(d))/(2*a);
+    printf("The roots are:\n%f\n%f ",r1,r2);
+   }
+   return 0;
+}
+
+
+
+INPUT
+4 5 1
+12 15 10
+
+OUTPUT:
+
+The roots are:
+-0.250000
+-1.000000 
+
+Roots are imaginary
