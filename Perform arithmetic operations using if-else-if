@@ -1,0 +1,38 @@
+Write a program to read 2 numbers and print 1 for additionn,2 for subtraction, 3 for multiplication and 4 for division using "if-else-if"
+
+SOURCE CODE:
+
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<math.h>
+int main() {
+  int a,b;
+  scanf("%d%d",&a,&b);
+  int ch;
+  scanf("%d",&ch);
+  if(ch==1){
+      printf("Addition :%d",a+b);
+  }
+  else
+  if(ch==2){
+      printf("Suntraction: %d",b);
+  }
+  else
+  if(ch==3){
+      printf("Multiplication: %d",a*b);
+  }
+  else
+  if(ch==4){
+      printf("Division: ",a/b);
+  }
+  else{
+      printf("Enter valid number");
+  }
+   return 0;
+}
+
+OUTPUT:
+
+15 2
+3
+Multiplication: 30
