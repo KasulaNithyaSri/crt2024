@@ -1,0 +1,23 @@
+write a program to print sum of natural numbers using while loop
+
+SOURCE CODE:
+
+#include <stdio.h>
+
+int main() {
+    int n=1,m,a=0;
+    scanf("%d",&m);
+    while(n<=m){
+        a=a+n;
+        n=n+1;
+    }
+    printf("%d",a);
+    return 0;
+}
+
+INPUT:
+5
+OUTPUT:
+
+5
+15
