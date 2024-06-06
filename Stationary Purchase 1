@@ -23,6 +23,19 @@ Price per item is Rs.5
 Total Amount = Rs.500
 GST - Rs.90.0
 Net Amount Payable is Rs.590.0
+Sample Input 1
+
+350
+20
+Sample Output 1
+
+Quantity Ordered 350
+Price per item is Rs.20
+Total Amount = Rs.7000
+Discount Earned = Rs.1400.0
+Amount after Discount - Rs.5600.0
+GST - Rs.1008.0
+Net Amount Payable is Rs.6608.0
 
 SOURCE CODE:
 
@@ -39,17 +52,28 @@ int main() {
     int total;
     
     if(quantity > 200){
-        total=quantity*cost - quantity*cost*20/100;
+        total=quantity*cost;
+        float discount=quantity*cost*20/100;
+        float r_amount=total-discount;
+        float gst=(18*r_amount)/100;
+        printf("Quantity Ordered %d\n",quantity);
+        printf("Price per item is Rs.%d\n",cost);
+        printf("Total Amount = Rs.%d\n",total);
+        printf("Discount Earned = Rs.%.1f\n",discount);
+        printf("Amount after Discount - Rs.%.1f\n",r_amount);
+        printf("GST - Rs.%.1f\n",gst);
+        printf("Net Amount Payable is Rs.%.1f",r_amount+gst);
     }
     else{
         total=quantity*cost;
-    }
         float gst=(18*total)/100;
         printf("Quantity Ordered %d\n",quantity);
         printf("Price per item is Rs.%d\n",cost);
         printf("Total Amount = Rs.%d\n",total);
         printf("GST - Rs.%.1f\n",gst);
         printf("Net Amount Payable is Rs.%.1f",total+gst);
+    }
+        
     
     return 0;
 }
