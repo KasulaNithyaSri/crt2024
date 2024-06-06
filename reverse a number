@@ -1,0 +1,22 @@
+write a program find the reverse of numbers
+
+SOURCE CODE:
+
+#include <stdio.h>
+
+int main() {
+    int n,d,r=0;
+    scanf("%d",&n);
+    while(n>0){
+        d=n%10;
+        n=n/10;
+        r=r*10+d;
+    }
+    printf("%d",r);
+            return 0;
+}
+
+OUTPUT:
+
+12562
+26521
