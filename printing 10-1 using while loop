@@ -1,0 +1,29 @@
+write a program to print 10 -1 in reverse order using while loop
+
+SOURCE CODE:
+
+#include <stdio.h>
+
+int main() {
+    int i=10;
+    
+    while(i<=10 && i>=1){
+        printf("%d\n",i);
+        i--;
+    }
+
+    return 0;
+}
+
+OUTPUT:
+
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
