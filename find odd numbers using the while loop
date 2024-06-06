@@ -1,0 +1,47 @@
+write  a program to display odd numbers using while loop
+
+SOURCE CODE:
+#include <stdio.h>
+
+int main() {
+    int i=1,n;
+    scanf("%d",&n);
+    while(i<=n){
+        printf("%d\n",i);
+        i=i+2;
+    }
+
+    return 0;
+}
+INPUT:
+55
+OUTPUT:
+55
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+21
+23
+25
+27
+29
+31
+33
+35
+37
+39
+41
+43
+45
+47
+49
+51
+53
+55
