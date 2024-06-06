@@ -1,0 +1,39 @@
+Write a C program to find the sum of the series 2 +22 + 222 + 2222 + .. n terms
+
+Input Format
+
+Line 1:
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+Sample Input 0
+
+5
+Sample Output 0
+
+24690
+
+SOURCE CODE:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int n,r=2,sum=2;
+    scanf("%d",&n);
+    for(int i=10;i<pow(10,n);i=i*10){
+       
+        r=2*i+r;
+        sum=sum+r;
+    }
+    printf("%d",sum);
+    return 0;
+}
