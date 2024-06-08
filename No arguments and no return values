@@ -1,0 +1,21 @@
+Write a program for " NO ARUMENTS AND NO RETURN VALUES"
+
+SOURCE CODE:
+
+#include <stdio.h>
+  int area(){
+        int l,b;
+        scanf("%d %d",&l,&b);
+        int r=l*b;
+        printf("%d",r);
+    }
+  int main(){
+      area();
+    return 0;
+}
+
+OUTPUT:
+
+51
+0
+0
