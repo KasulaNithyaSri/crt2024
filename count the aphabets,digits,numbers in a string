@@ -1,0 +1,32 @@
+SOURCE CODE:
+
+#include <stdio.h>
+#include<string.h>
+int main() {
+    char s1[50],s2[50];
+    int i,alph=0,digits=0,sym=0;
+    scanf("%s",s1);
+    for(i=0;s1[i]!='\0';i++){
+        if((s1[i]>=65 && s1[i]<=90) || s1[i]>=97 && s1[i]<=122){
+            alph++;
+        }
+        else
+        if(s1[i]>=48 &&s1[i]<=57){
+            digits++;
+        }
+        else{
+            sym++;
+        }
+    }
+    printf("count =%d\n",alph);
+    printf("digits =%d\n",digits);
+    printf("sym =%d",sym);
+    return 0;
+}
+
+OUTPUT:
+
+ShaSHi15@@09NiThyA
+count =12
+digits =4
+sym =2
