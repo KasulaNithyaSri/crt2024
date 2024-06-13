@@ -1,0 +1,54 @@
+Write a program to sort the given string.
+
+Input Format
+
+Read a string
+
+Constraints
+
+string
+
+Output Format
+
+print the ascending order of given string.
+
+Sample Input 0
+
+god
+Sample Output 0
+
+dgo
+Sample Input 1
+
+python
+Sample Output 1
+
+hnopty
+
+
+SOURCE CODE:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    char s[50];
+    scanf("%[^\n]s",s);
+    char temp;
+     int n=strlen(s);
+    for(int i=0;i<n-1;i++){
+        for(int j=i+1;j<n;j++){                    
+        if(s[j]<s[i]){
+            temp=s[i];
+            s[i]=s[j];
+            s[j]=temp;
+        }    
+        }
+    }
+    printf("%s",s);
+    return 0;
+}
