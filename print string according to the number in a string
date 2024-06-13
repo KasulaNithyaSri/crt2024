@@ -1,0 +1,29 @@
+INPUT:
+
+k5n4r3
+
+OUTPUT:
+
+kkkknnnnrrr
+
+SOURCE CODE:
+
+#include <stdio.h>
+#include<string.h>
+int main() {
+    char s[50],r;
+    int i,j;
+    scanf("%[^\n]s",s);
+    int n=strlen(s);
+    for(i=0;i<n;i=i+2){
+        r=s[i];
+        
+        j=s[i+1];
+        j=j-48;
+        while(j>0){
+            printf("%c",r);
+            j--;
+        }
+    }
+    return 0;
+}
