@@ -11,7 +11,7 @@ int main() {
     return 0;
 }
 
-SOURCE CODE without "strcat":
+SOURCE CODE without "strcat"1:
 
 #include <stdio.h>
 
@@ -32,6 +32,30 @@ int main() {
 
     return 0;
 }
+
+
+SOURCE CODE without "strcat"2:
+
+#include <stdio.h>
+
+int main() {
+    char s1[50],s2[50],i,j;
+    scanf("%s",s1);
+    scanf("\n%s",s2);
+    char r[50];
+    for(i=0;s1[i]!='\0';i++){
+        r[i]=s1[i];
+        
+    }
+    for(j=0;s2[j]!='\0';j++){
+        r[i+j]=s2[j];
+    }
+    r[i+j]='\0';
+    printf("%s",r);
+
+    return 0;
+}
+
 
 OUTPUT:
 
