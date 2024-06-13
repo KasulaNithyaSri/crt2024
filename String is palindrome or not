@@ -1,0 +1,32 @@
+SOURCE CODE:
+
+#include <stdio.h>
+#include<string.h>
+int main() {
+    char s1[50],s2[50];
+    scanf("%s",s1);
+    int i,n,j=0;
+    n=strlen(s1);
+    for(int i=n-1;i>=0;i--){
+        s2[j]=s1[i];
+        j++;
+    }
+    s2[j]='\0';
+    i=strcmp(s1,s2);
+    if(i==0){
+        printf("Palindrome");
+    }
+    else
+    printf("not a palindrome");
+    return 0;
+}
+
+OUTPUT1:
+
+nithya
+not a palindrome
+
+OUTPUT2:
+
+madam
+Palindrome
