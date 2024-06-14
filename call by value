@@ -1,0 +1,48 @@
+swaping of 2 numbers
+
+SOURCE CODE!:
+
+#include <stdio.h>
+#include<stdlib.h>
+void swap(int x,int y){
+    int t;
+    t=x;
+    x=y;
+    y=t;
+}
+int main() {
+    int a,b;
+     scanf("%d %d",&a,&b);
+     printf("Values before swaping a=%d b=%d \n",a,b);
+     swap(a,b);
+     printf("Values after swaping a=%d b=%d ",a,b);
+     
+    return 0;
+}
+
+SOURCE CODE2:
+
+#include <stdio.h>
+#include<stdlib.h>
+void swap(int a,int b){
+    int t;
+    t=a;
+    a=b;
+    b=t;
+}
+int main() {
+    int a,b;
+     scanf("%d %d",&a,&b);
+     printf("Values before swaping a=%d b=%d \n",a,b);
+     swap(a,b);
+     printf("Values after swaping a=%d b=%d ",a,b);
+     
+    return 0;
+}
+
+OUTPUT:
+
+15
+20
+Values before swaping a=15 b=20 
+Values after swaping a=15 b=20 
