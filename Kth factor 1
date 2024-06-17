@@ -1,0 +1,57 @@
+A positive integer d is said to be a factor of another positive integer N if when N is divided by d, the remainder obtained is zero. For example, for number 12, there are 6 factors 1, 2, 3, 4, 6, 12. Every positive integer k has at least two factors, 1 and the number k itself. Given two positive integers N and K, write a program to print the kth largest factor of N.
+
+Input Format
+
+The first line of input contains space-separated list of positive integer pairs(N K)
+
+Constraints
+
+1 < N < 10000000000. 1 < K < 600
+
+Output Format
+
+Print the kth highest factor of N. If N does not have k factors, the output should be 1.
+
+Sample Input 0
+
+12 3
+Sample Output 0
+
+4
+Explanation 0
+
+N is 12, K is 3.
+The factors of 12 are (1, 2, 3, 4, 6, 12)
+The highest factor is 12, the second-highest factor is 6 and the third-highest factor is 4.
+Hence, the output is 4.
+
+SOURCE CODE:
+
+//ID-no:21UP1A0593     NAME:K.Nithya Sri      BRANCH:CSE-B
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int n,k,j=0;
+    
+    scanf("%d %d",&n,&k);
+    int b[n];
+    for(int i=n;i>=1;i--){
+        if(n%i==0){
+            j++;
+            if(j==k){
+                printf("%d",i);
+                return 0;
+            }
+        }
+      
+    }
+    
+    printf("1");
+    return 0;
+}
